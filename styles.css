@@ -157,8 +157,7 @@ nav ul li a:hover {
   text-align: center;
   max-width: fit-content;
   background-color: #f8f6f6;
-  margin: 20px 100px 0px 100px ;
-  margin-bottom: 250px;
+  margin: 20px auto 250px auto;
   border-radius: 15px;
   
 
