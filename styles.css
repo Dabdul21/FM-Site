@@ -19,7 +19,7 @@ nav {
   font-family: "Basier",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
   background-image: linear-gradient(to top, #000000, #131d26);
   color: #ffffff; /* White text */
-  padding: 20px 0px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,20 +30,35 @@ nav {
   
 }
 
+@media (max-width: 768px) {
+  nav {
+    padding: 10px;
+  }
+  nav h1 {
+    padding: 0 10px;
+  }
+  nav ul {
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+
 nav::after {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 20px; /* Adjust the left position to leave space on the left side */
-  right: 20px; /* Adjust the right position to leave space on the right side */
-  width: calc(100% - 40px); /* Adjust the width to fill the space between the left and right sides */
+  left: 10px; /* Adjust the left position to leave space on the left side */
+  right: 10px; /* Adjust the right position to leave space on the right side */
+  width: calc(100% - 20px); /* Adjust the width to fill the space between the left and right sides */
   height: 1px;
   background-color: #ffffff;
 }
 
 nav h1 {
-  padding-left: 20px;
-
+  padding-left: 10px;
 }
 
 nav h1 a {
@@ -55,14 +70,15 @@ nav h1 a {
 
 nav ul {
   list-style-type: none;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   display: flex;
+  justify-content: flex-end;
 
 }
 
 nav ul li {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 
@@ -86,9 +102,9 @@ nav ul li a:hover {
 .hero {
   
   background-image: url('1.jpg');
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   height: 91.5vh;
   display: flex;
   justify-content: center;
@@ -153,7 +169,7 @@ nav ul li a:hover {
 
 
 .set-goals-section {
-  padding: 15px 100px 40px 100px;
+  padding: 15px 65px 40px 65px;
   text-align: center;
   max-width: fit-content;
   background-color: #f8f6f6;
@@ -175,7 +191,7 @@ body .set-goals-section h2 {
 }
 
 #goal-list li {
-  background-color: #f9f9f9; /* Light gray background */
+  background-color: #fff; /* Light gray background */
   padding: 10px 20px;
   margin-bottom: 10px;
   border-radius: 10px; /* Rounded corners */
@@ -326,7 +342,7 @@ body .set-goals-section h2 {
 
 .star {
   font-size: 94px;
- 
+ color: gold
 }
 
 
@@ -362,7 +378,7 @@ footer p:last-child {
 .social-icon {
   display: inline-block;
   margin: 0 5px; /* Add spacing between icons */
-  color: #314c68;
+  color: #648cb8;
   font-size: 24px; /* Increase icon size */
   transition: color 0.3s ease; /* Add transition effect */
 }
